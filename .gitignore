@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vercel/
+splitter/.venv/
+splitter/jobs/
+*.log
+*.tsbuildinfo
