@@ -1,0 +1,7 @@
+export const ingredientKinds = ["Genre", "Mood", "Instrument", "Voice", "Rhythm", "Texture", "Production", "Structure", "Exclusion"] as const;
+export type IngredientKind = typeof ingredientKinds[number];
+export type Ingredient = { id:string; name:string; phrase:string; kind:IngredientKind; notes:string; favorite:boolean; uses:number; createdAt:string };
+export type Rating = { overall:number; adherence:number; originality:number; sound:number };
+export type Version = { id:string; number:number; prompt:string; exclusions:string; note:string; createdAt:string; rating?:Rating; outcomeNote?:string; sunoUrl?:string };
+export type Recipe = { id:string; title:string; collection:string; tags:string[]; ingredientIds:string[]; customText:string; createdAt:string; updatedAt:string; favorite:boolean; versions:Version[] };
+export type Vault = { schema:1; ingredients:Ingredient[]; recipes:Recipe[]; collections:string[] };
