@@ -5,5 +5,6 @@ export type Rating = { overall:number; adherence:number; originality:number; sou
 export type Version = { id:string; number:number; prompt:string; exclusions:string; note:string; createdAt:string; rating?:Rating; outcomeNote?:string; sunoUrl?:string };
 export type BlendSettings = { energy:number; bpm:string; vocalMode:"Any"|"Instrumental"|"Female"|"Male"|"Spoken Word"; customExclusions:string; ingredientOrder:string[]; keyMode:string; duration:string; era:string; creativity:number; mixProfile:"Organic"|"Cinematic"|"Raw"|"Polished"|"Vintage" };
 export type Recipe = { id:string; title:string; collection:string; tags:string[]; ingredientIds:string[]; customText:string; blend?:BlendSettings; createdAt:string; updatedAt:string; favorite:boolean; versions:Version[] };
-export type ArchivedPrompt = { id:string; title:string; prompt:string; collection:string; tags:string[]; notes:string; rating:number; favorite:boolean; createdAt:string; updatedAt:string };
+export type PromptDomain = "Suno"|"GPT"|"Image";
+export type ArchivedPrompt = { id:string; title:string; prompt:string; domain?:PromptDomain; collection:string; tags:string[]; notes:string; rating:number; favorite:boolean; createdAt:string; updatedAt:string };
 export type Vault = { schema:1; ingredients:Ingredient[]; recipes:Recipe[]; archivedPrompts:ArchivedPrompt[]; collections:string[] };
