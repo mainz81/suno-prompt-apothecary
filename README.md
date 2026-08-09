@@ -4,6 +4,8 @@ A private, local-first laboratory for collecting musical ingredients, blending S
 
 The Prompt Archive also preserves manually written or externally discovered prompts with collections, tags, private notes, ratings, favorites, search, editing and one-click copying.
 
+The expanded Cauldron includes user-created folders, energy and tempo controls, vocal-form direction, reorderable ingredients, custom exclusions, inspiration and reset tools, live character counting, and complete preservation of blend settings when a formula is refined.
+
 The deployed site is an installable Progressive Web App with a dedicated icon, standalone desktop window, and offline application shell.
 
 ## Local development
