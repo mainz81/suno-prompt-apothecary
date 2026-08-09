@@ -4,4 +4,5 @@ export type Ingredient = { id:string; name:string; phrase:string; kind:Ingredien
 export type Rating = { overall:number; adherence:number; originality:number; sound:number };
 export type Version = { id:string; number:number; prompt:string; exclusions:string; note:string; createdAt:string; rating?:Rating; outcomeNote?:string; sunoUrl?:string };
 export type Recipe = { id:string; title:string; collection:string; tags:string[]; ingredientIds:string[]; customText:string; createdAt:string; updatedAt:string; favorite:boolean; versions:Version[] };
-export type Vault = { schema:1; ingredients:Ingredient[]; recipes:Recipe[]; collections:string[] };
+export type ArchivedPrompt = { id:string; title:string; prompt:string; collection:string; tags:string[]; notes:string; rating:number; favorite:boolean; createdAt:string; updatedAt:string };
+export type Vault = { schema:1; ingredients:Ingredient[]; recipes:Recipe[]; archivedPrompts:ArchivedPrompt[]; collections:string[] };
