@@ -6,6 +6,8 @@ The Prompt Archive also preserves manually written or externally discovered prom
 
 The expanded Cauldron includes user-created folders, energy and tempo controls, vocal-form direction, reorderable ingredients, custom exclusions, inspiration and reset tools, live character counting, and complete preservation of blend settings when a formula is refined.
 
+The final goddess refinement adds ten studio powers: automatic unfinished-draft recovery, key/mode direction, target duration, musical era, creativity control, mix profiles, three alternate distillations, direct Cauldron-to-Archive transfer, folder renaming/removal with safe reassignment, and an expanded Grimoire with folder filtering, duplication and Markdown export.
+
 The deployed site is an installable Progressive Web App with a dedicated icon, standalone desktop window, and offline application shell.
 
 ## Local development
