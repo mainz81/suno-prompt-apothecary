@@ -1,7 +1,7 @@
 import type { Ingredient, Vault } from "./types";
 const now="2026-08-08T00:00:00.000Z";
 const seed=(id:string,name:string,phrase:string,kind:Ingredient["kind"],notes=""):Ingredient=>({id,name,phrase,kind,notes,favorite:false,uses:0,createdAt:now});
-export const initialVault:Vault={schema:1,collections:["Sisters of Freya","SUBINAC","Sleep Magic","Experiments"],recipes:[],ingredients:[
+export const initialVault:Vault={schema:1,collections:["Sisters of Freya","SUBINAC","Sleep Magic","Experiments"],recipes:[],archivedPrompts:[],ingredients:[
  seed("norse-boom","Norse Boom Bap","Nordic ritual boom bap with colossal dusty drums","Genre"),
  seed("shadow-jazz","Shadow Jazz","nocturnal spiritual jazz drifting through a candlelit chamber","Genre"),
  seed("cinematic-ambient","Cinematic Ambient","vast cinematic dark ambient with patient harmonic movement","Genre"),
