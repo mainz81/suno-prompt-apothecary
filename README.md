@@ -2,6 +2,8 @@
 
 A private, local-first laboratory for collecting musical ingredients, blending Suno style prompts, preserving version history, and rating generated outcomes.
 
+The Prompt Archive also preserves manually written or externally discovered prompts with collections, tags, private notes, ratings, favorites, search, editing and one-click copying.
+
 The deployed site is an installable Progressive Web App with a dedicated icon, standalone desktop window, and offline application shell.
 
 ## Local development
